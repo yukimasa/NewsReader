@@ -12,6 +12,7 @@
 		F272023022ED729C00A4B29C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F272022F22ED729C00A4B29C /* Assets.xcassets */; };
 		F272023322ED729C00A4B29C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F272023122ED729C00A4B29C /* LaunchScreen.storyboard */; };
 		F272023B22ED754000A4B29C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272023A22ED754000A4B29C /* ListViewController.swift */; };
+		F272023D22ED7C1B00A4B29C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272023C22ED7C1B00A4B29C /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F272023222ED729C00A4B29C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F272023422ED729C00A4B29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F272023A22ED754000A4B29C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		F272023C22ED7C1B00A4B29C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				F272022822ED729B00A4B29C /* AppDelegate.swift */,
 				F272022C22ED729B00A4B29C /* Main.storyboard */,
 				F272023A22ED754000A4B29C /* ListViewController.swift */,
+				F272023C22ED7C1B00A4B29C /* Item.swift */,
 				F272022F22ED729C00A4B29C /* Assets.xcassets */,
 				F272023122ED729C00A4B29C /* LaunchScreen.storyboard */,
 				F272023422ED729C00A4B29C /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F272023B22ED754000A4B29C /* ListViewController.swift in Sources */,
+				F272023D22ED7C1B00A4B29C /* Item.swift in Sources */,
 				F272022922ED729B00A4B29C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
