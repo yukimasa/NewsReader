@@ -97,4 +97,20 @@ class ListViewController: UITableViewController, XMLParserDelegate {
         // テーブルビューの内容を更新する（UITableViewクラスのreloadData()メソッドを呼び出す）ことで取得したニュースの記事を画面に表示している。
         self.tableView.reloadData()
     }
+    
+    // 記事のデータを次の画面に渡す処理
+    // 画面推移のタイミングで何らかのデータを受け渡したい場合は、セグエの設定に加えてprepare(for:sender:)メソッドを書く必要がある
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // UITableViewクラスのindexPathForSelectedRowプロパティを使ってユーザーがタップしたセルのindexPathを取得し、その値を用いてitems配列から該当する記事（item）を取得
+        if let indexPath = self.tableView.indexPathForSelectedRow {
+            let item = items[indexPath.row]
+            // 推移先のビューコントローラーを格納
+            // 引数のsegueはUIStoryboardSegueクラス（ストーリーボード上の矢印）のインスタンスで、destinationプロパティ(推移先のビューコントローラー)を持つ
+            let controller = segue.destination as! DetailViewController
+            // 推移先のtitleとlinkに記事のタイトルとURLを格納している
+            controller.title = item.title
+            controller.link = item.link
+        }
+    }
 }

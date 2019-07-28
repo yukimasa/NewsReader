@@ -13,6 +13,8 @@
 		F272023322ED729C00A4B29C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F272023122ED729C00A4B29C /* LaunchScreen.storyboard */; };
 		F272023B22ED754000A4B29C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272023A22ED754000A4B29C /* ListViewController.swift */; };
 		F272023D22ED7C1B00A4B29C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272023C22ED7C1B00A4B29C /* Item.swift */; };
+		F272024022ED89F800A4B29C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F272023F22ED89F800A4B29C /* WebKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		F272024222ED8A2400A4B29C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272024122ED8A2400A4B29C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F272023422ED729C00A4B29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F272023A22ED754000A4B29C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		F272023C22ED7C1B00A4B29C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F272023F22ED89F800A4B29C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F272024122ED8A2400A4B29C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F272024022ED89F800A4B29C /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			children = (
 				F272022722ED729B00A4B29C /* NewsReader */,
 				F272022622ED729B00A4B29C /* Products */,
+				F272023E22ED89F800A4B29C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +65,21 @@
 				F272022822ED729B00A4B29C /* AppDelegate.swift */,
 				F272022C22ED729B00A4B29C /* Main.storyboard */,
 				F272023A22ED754000A4B29C /* ListViewController.swift */,
+				F272024122ED8A2400A4B29C /* DetailViewController.swift */,
 				F272023C22ED7C1B00A4B29C /* Item.swift */,
 				F272022F22ED729C00A4B29C /* Assets.xcassets */,
 				F272023122ED729C00A4B29C /* LaunchScreen.storyboard */,
 				F272023422ED729C00A4B29C /* Info.plist */,
 			);
 			path = NewsReader;
+			sourceTree = "<group>";
+		};
+		F272023E22ED89F800A4B29C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F272023F22ED89F800A4B29C /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +156,7 @@
 				F272023B22ED754000A4B29C /* ListViewController.swift in Sources */,
 				F272023D22ED7C1B00A4B29C /* Item.swift in Sources */,
 				F272022922ED729B00A4B29C /* AppDelegate.swift in Sources */,
+				F272024222ED8A2400A4B29C /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
